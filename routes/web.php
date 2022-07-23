@@ -20,5 +20,3 @@ Route::group(['prefix' => 'neo'], function () {
     Route::get('/hazardous', [NeoEarthObjectController::class, 'hazardous'])->name('neo.hazardous');
     Route::get('/fastest', [NeoEarthObjectController::class, 'fastest'])->name('neo.fastest');
 });
-
-Route::get('/test', [NeoEarthObjectController::class, 'test']);

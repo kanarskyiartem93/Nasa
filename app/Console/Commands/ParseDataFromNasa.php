@@ -22,11 +22,6 @@ class ParseDataFromNasa extends Command
      */
     protected $description = 'Get data from the last 3 days from nasa api and save in database';
 
-    /**
-     * Execute the console command.
-     *
-     * @return int
-     */
     public function handle(NasaService $service)
     {
         $service->handle(Carbon::now()->subDays(2), Carbon::now());
